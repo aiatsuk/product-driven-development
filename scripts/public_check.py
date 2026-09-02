@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from pathlib import Path
 
 
@@ -33,14 +34,19 @@ FORBIDDEN_NAMES = {".DS_Store", ".env"}
 FORBIDDEN_SUFFIXES = {".pyc", ".p12", ".jks", ".pem", ".key"}
 
 
+def shipped_files() -> list[Path]:
+    result = subprocess.run(
+        ["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, check=False
+    )
+    if result.returncode == 0:
+        return [ROOT / item.decode() for item in result.stdout.split(b"\0") if item]
+    return [path for path in ROOT.rglob("*") if path.is_file()]
+
+
 def main() -> int:
     failures: list[str] = []
-    for path in sorted(ROOT.rglob("*")):
-        if ".git" in path.parts or path == Path(__file__).resolve():
-            continue
-        if path.is_dir():
-            if path.name == "__pycache__":
-                failures.append(f"generated directory: {path.relative_to(ROOT)}")
+    for path in sorted(shipped_files()):
+        if path == Path(__file__).resolve():
             continue
         relative = path.relative_to(ROOT)
         if path.name in FORBIDDEN_NAMES or path.suffix.lower() in FORBIDDEN_SUFFIXES:
