@@ -1,0 +1,18 @@
+{
+  "name": "product-driven-development",
+  "displayName": "Product Driven Development",
+  "version": "0.5.0",
+  "description": "Curated product memory with bounded, read-only Codex, Claude, and Grok session evidence fallback and no lifecycle hooks.",
+  "author": {
+    "name": "Andrei Iatsuk",
+    "url": "https://github.com/aiatsuk"
+  },
+  "keywords": [
+    "product-development",
+    "product-context",
+    "knowledge",
+    "sessions",
+    "transcripts",
+    "native-session-evidence"
+  ]
+}

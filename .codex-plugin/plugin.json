@@ -1,0 +1,37 @@
+{
+  "name": "product-driven-development",
+  "version": "0.5.0",
+  "description": "Curated product memory with bounded, read-only Codex, Claude, and Grok session evidence fallback and no lifecycle hooks.",
+  "author": {
+    "name": "Andrei Iatsuk",
+    "url": "https://github.com/aiatsuk"
+  },
+  "homepage": "https://github.com/aiatsuk/product-driven-development",
+  "repository": "https://github.com/aiatsuk/product-driven-development",
+  "keywords": [
+    "product-development",
+    "product-context",
+    "knowledge",
+    "sessions",
+    "transcripts",
+    "native-session-evidence"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product Driven Development",
+    "shortDescription": "Curated product memory with exact session evidence",
+    "longDescription": "Bundles the Product Driven Development skill, note templates, and an on-demand read-only helper for exact Codex, Claude, and Grok session evidence. Invoke $product-driven-development or ask naturally. The plugin ships no lifecycle hook, daemon, database, automatic session binding, or native slash command.",
+    "developerName": "Andrei Iatsuk",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Product memory",
+      "Native session evidence"
+    ],
+    "defaultPrompt": [
+      "Use $product-driven-development to list my products and their active work.",
+      "Use $product-driven-development to answer from curated product knowledge and verify a named Codex, Claude, or Grok session only when evidence fallback is required."
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "product-driven-development-local",
+  "description": "Public marketplace for the self-contained Product Driven Development plugin.",
+  "owner": {
+    "name": "Andrei Iatsuk",
+    "url": "https://github.com/aiatsuk"
+  },
+  "plugins": [
+    {
+      "name": "product-driven-development",
+      "source": "./",
+      "version": "0.5.0",
+      "description": "Bundles curated product context, milestone notes, and bounded read-only native-session evidence without lifecycle hooks."
+    }
+  ]
+}

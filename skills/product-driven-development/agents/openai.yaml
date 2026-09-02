@@ -1,0 +1,6 @@
+interface:
+  display_name: "Product-Driven Development"
+  short_description: "Product memory with native session evidence"
+  default_prompt: "Use $product-driven-development to select the relevant product, answer from curated knowledge, and verify a named Codex, Claude, or Grok session only when evidence fallback is required."
+policy:
+  allow_implicit_invocation: true
