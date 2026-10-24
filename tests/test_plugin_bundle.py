@@ -35,7 +35,7 @@ class ProductDrivenDevelopmentBundleTest(unittest.TestCase):
         )
         marketplace_entry = marketplace["plugins"][0]
 
-        self.assertEqual("0.5.0", claude_manifest["version"])
+        self.assertEqual("0.5.1", claude_manifest["version"])
         self.assertEqual(claude_manifest["version"], marketplace_entry["version"])
         self.assertEqual(
             claude_manifest["version"],

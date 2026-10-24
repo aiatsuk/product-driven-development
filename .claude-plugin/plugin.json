@@ -1,7 +1,7 @@
 {
   "name": "product-driven-development",
   "displayName": "Product Driven Development",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Curated product memory with bounded, read-only Codex, Claude, and Grok session evidence fallback and no lifecycle hooks.",
   "author": {
     "name": "Andrei Iatsuk",

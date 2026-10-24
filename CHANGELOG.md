@@ -2,6 +2,10 @@
 
 All notable changes to this plugin. Newest first.
 
+## 0.5.1 — 2026-10-24
+
+- Skill frontmatter sets `model: sonnet` and `effort: medium`.
+
 ## 0.5.0 — 2026-09-02
 
 - First public release of the self-contained Product Driven Development skill and plugin.
