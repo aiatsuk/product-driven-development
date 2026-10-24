@@ -9,7 +9,7 @@
     {
       "name": "product-driven-development",
       "source": "./",
-      "version": "0.5.0",
+      "version": "0.5.1",
       "description": "Bundles curated product context, milestone notes, and bounded read-only native-session evidence without lifecycle hooks."
     }
   ]
