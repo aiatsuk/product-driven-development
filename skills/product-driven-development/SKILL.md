@@ -1,6 +1,8 @@
 ---
 name: product-driven-development
 description: "Maintain product-level memory as Markdown above repositories, tickets, and AI chats. Use when selecting a product, recovering prior context, browsing active work, recording durable results or decisions, or verifying missing, conflicting, or exact details against a named native Codex, Claude, or Grok session."
+model: sonnet
+effort: medium
 ---
 
 # Product-Driven Development
